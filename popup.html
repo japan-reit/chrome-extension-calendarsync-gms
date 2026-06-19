@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco Calendar Syncer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>カレンダー同期</h2>
+    <p class="description">GoogleとMicrosoft 365のカレンダーを同期します。</p>
+
+    <div class="auth-section">
+      <button id="btn-google-login" class="btn google-btn">
+        <span class="icon">G</span> Googleでサインイン
+      </button>
+      <div id="google-status" class="status-text">未ログイン</div>
+    </div>
+
+    <div class="auth-section">
+      <button id="btn-ms-login" class="btn ms-btn">
+        <span class="icon">M</span> Microsoftでサインイン
+      </button>
+      <div id="ms-status" class="status-text">未ログイン</div>
+    </div>
+
+    <hr>
+
+    <div class="sync-section">
+      <button id="btn-sync-now" class="btn sync-btn" disabled>
+        今すぐ同期
+      </button>
+      <div id="sync-status" class="status-text">準備完了</div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
