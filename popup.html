@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Eco Calendar Syncer</title>
+  <title>GMS Calendar Sync</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -32,6 +32,16 @@
       </button>
       <div id="sync-status" class="status-text">準備完了</div>
     </div>
+
+    <hr>
+
+    <div class="log-section">
+      <div class="log-title">同期ログ <span id="log-clear" class="log-clear-btn">クリア</span></div>
+      <div id="sync-log-list" class="log-list">
+        <div class="log-empty">ログなし</div>
+      </div>
+    </div>
+
   </div>
   <script src="popup.js"></script>
 </body>

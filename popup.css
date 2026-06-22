@@ -91,3 +91,80 @@ hr {
   background: #e0e0e0;
   margin: 8px 0;
 }
+
+.log-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.log-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #5f6368;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.log-clear-btn {
+  font-size: 10px;
+  color: #aaa;
+  cursor: pointer;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.log-clear-btn:hover {
+  color: #c5221f;
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.log-empty {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  padding: 6px 0;
+}
+
+.log-entry {
+  font-size: 11px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  line-height: 1.5;
+}
+
+.log-success {
+  background: #f0faf4;
+  color: #137333;
+}
+
+.log-error {
+  background: #fce8e6;
+  color: #c5221f;
+}
+
+.log-time {
+  color: #888;
+  margin-right: 4px;
+}
+
+.log-counts {
+  display: block;
+  font-size: 10px;
+  color: #5f6368;
+  margin-top: 1px;
+}
+
+.log-failed {
+  color: #e37400;
+  font-weight: 600;
+  margin-left: 4px;
+}
