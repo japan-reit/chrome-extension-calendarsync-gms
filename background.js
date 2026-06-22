@@ -430,8 +430,9 @@ async function createEventInGoogle(token, mEvent) {
     if (isAllDay) {
       return { date: dt.dateTime.split('T')[0] };
     } else {
-      // MSはローカル時刻（タイムゾーンなし）を返すため、先頭19文字のみ使用し'Z'は付けない
-      return { dateTime: dt.dateTime.substring(0, 19) };
+      // Google Calendar API は timeZone なしの裸のローカル時刻を不正形式とみなし 400 を返すため
+      // MS の timeZone（例: "Tokyo Standard Time" / "Asia/Tokyo"）をそのまま渡す
+      return { dateTime: dt.dateTime.substring(0, 19), timeZone: dt.timeZone || 'UTC' };
     }
   };
 
