@@ -26,7 +26,7 @@ chrome-extention-calendersync-gms/
 ├── popup.js                   # ポップアップロジック
 ├── background.js              # バックグラウンドサービスワーカー（同期・認証処理）
 ├── test-no-duplicates.mjs     # Node.js製E2Eテストハーネス（重複防止・ログ記録検証）
-└── spec.md                    # 本仕様書
+└── README.md                  # 本仕様書
 ```
 
 ---
