@@ -2,7 +2,6 @@
   "manifest_version": 3,
   "name": "GMS Calendar Sync",
   "version": "1.0.0",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu8nkn/GeSjP5RaAxBio/tdf/tLvAgf8TWJb5jw9xs4jqXI4Td9yAH2HPc95CAce6R3657TxfuiNbjEjS/Dh8GUDMzvTPbub1fL6cs6zfy5rwSM6JH945wnz0Wv3Q+ixF6gzD0ErPuTH+dUhWlP/LMDRmA93JV71QTMNW1wN3bz8EInif+reQRDK3zfCBSqyjFN6HKnAfPe97y0Oax98xllFYtsRGkpysNf1xn4oDpSxAuq4MwI3fmIPsj0BObO32v5w3/xDGO5qcfA/HDHKuU//TNgpex93RcKX0h6gHBvTrNxiuRp1G8tsHeBL92SAUsCsQQ2cwU/CK27FFkTNXXwIDAQAB",
   "description": "GoogleとOutlookカレンダーを簡単に双方向同期します。",
   "permissions": [
     "identity",
@@ -12,8 +11,20 @@
   "background": {
     "service_worker": "background.js"
   },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
   },
   "oauth2": {                                                                                                                                         
     "client_id": "905591288296-4pe2iqqm09cimodbov89s3u5v00phfu5.apps.googleusercontent.com",                                                                                       
